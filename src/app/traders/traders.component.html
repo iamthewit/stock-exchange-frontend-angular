@@ -1,0 +1,7 @@
+<ul class="traders">
+  <li *ngFor="let trader of traders">
+    <a routerLink="/trader/{{trader.id}}">
+      <span class="badge">{{trader.id}}</span>
+    </a>
+  </li>
+</ul>
