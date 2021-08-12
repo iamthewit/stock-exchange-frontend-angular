@@ -1,0 +1,20 @@
+<div *ngIf="trader">
+  <h2>Trader: {{trader.id}}</h2>
+
+  <table class="table">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Symbol</th>
+      <th>Owner ID</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let share of trader.shares">
+      <td>{{ share.id }}</td>
+      <td>{{ share.symbol }}</td>
+      <td>{{ share.owner_id }}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
